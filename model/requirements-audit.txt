@@ -1,0 +1,3 @@
+# Audit-only tools; no YOLO, PyTorch, training or inference dependencies.
+Pillow==13.0.0
+PyYAML==6.0.3

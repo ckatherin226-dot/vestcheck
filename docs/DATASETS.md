@@ -6,6 +6,8 @@ Research date: **2026-11-05**. Scope: dataset research and selection only. Read 
 
 The rendered Ultralytics documentation site was blocked by the environment's network policy. Its official Markdown source and YAML were retrieved from the Ultralytics GitHub repository instead and verified at the pinned revision below. The SH17 paper, Kaggle package, upstream Pexels terms, and dataset archives were not independently inspected; references to their contents are limited to what the repository publishes.
 
+Subsequent actual-release evidence is recorded in [Phase 2.2A acquisition and audit](DATASET_AUDIT.md). The findings below retain their Phase 2.1 research scope and date.
+
 ## Primary-source register
 
 All sources below were retrieved on 2026-11-05. GitHub revision links preserve the researched version rather than relying on changing branch tips.
