@@ -1,0 +1,842 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "status": "reviewed_sample_not_full_clearance",
+  "reviewer": "Codex image inspection using view_image; not independent expert annotation validation",
+  "selection": "20 unique class x split x filename-family strata; lower-quartile smallest target area for source-, median for other family, deterministic unique selection",
+  "source_origin_warning": "Filename families are not verified real/generated labels",
+  "sample": [
+    {
+      "sample_id": "S01",
+      "path": "images/train/source-e84d51ea24bf6d8996adff9f25925376.jpg",
+      "stratum_class": "worker",
+      "source_class": 5,
+      "split": "train",
+      "filename_family": "source-",
+      "smallest_target_area": 0.0006879999999999999,
+      "sha256": "e48226e06fc60c0a3d0a6e6b05429fda5925b197d05c306f43992d0b02ae94ce",
+      "review_status": "limited_visibility",
+      "notes": "Distant seated subject partly occluded by forklift/cab. Person box plausible; enlarged source pixels are insufficient to certify head/torso PPE completeness.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S02",
+      "path": "images/train/ultralytics-ppe-nov2026-502.jpg",
+      "stratum_class": "worker",
+      "source_class": 5,
+      "split": "train",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.275410188,
+      "sha256": "b6b1fb583169c3ecda31ff13967c8c80d7e97c4feaf0b2fe673599e361499963",
+      "review_status": "broadly_compatible",
+      "notes": "Foreground person, high-visibility vest and non-hard-hat head covering are visible; supplied person/vest/no-helmet regions broadly align. No fit or compliance judgment.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S03",
+      "path": "images/val/source-49167518cb619cd5c12a8f33872f9b7e.jpg",
+      "stratum_class": "worker",
+      "source_class": 5,
+      "split": "val",
+      "filename_family": "source-",
+      "smallest_target_area": 0.00094,
+      "sha256": "49281bfeae6f1c50b533863ec641699df0d96e31dc9f9d0eb72ff98971e1dc91",
+      "review_status": "limited_visibility",
+      "notes": "Seated forklift operator is occluded by cab structure. Head/torso negative boxes need expert assessability and alignment review; absent detections alone cannot resolve PPE status.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S04",
+      "path": "images/val/ultralytics-ppe-nov2026-322.jpg",
+      "stratum_class": "worker",
+      "source_class": 5,
+      "split": "val",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.27621,
+      "sha256": "471a718157146edb9642a34e3d874b74eaa03971f08c8e65da733c506b5e8182",
+      "review_status": "broadly_compatible",
+      "notes": "Foreground person with helmet and high-visibility vest; lower body is frame-truncated. Visible boxes broadly align; full-body completeness cannot be inferred.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S05",
+      "path": "images/train/source-2a5a49c9dd060bc0eb76bdd8518a9137.jpg",
+      "stratum_class": "hard_hat",
+      "source_class": 0,
+      "split": "train",
+      "filename_family": "source-",
+      "smallest_target_area": 0.0001146717,
+      "sha256": "85da6b91a035bcb4ac2eb081d3f6bc7c047f64200f22818a17bd7666a8e6f581",
+      "review_status": "small_target_review",
+      "notes": "Distant workers on building levels; focused crop shows a small helmet/vest subject. Tiny target pixels and structural occlusion limit detailed localization/fit judgment.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S06",
+      "path": "images/train/ultralytics-ppe-nov2026-584.jpg",
+      "stratum_class": "hard_hat",
+      "source_class": 0,
+      "split": "train",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.014048170499999998,
+      "sha256": "37749b15e44bceeea240e795e08097816137caa4725d5285c08405b1576b16be",
+      "review_status": "broadly_compatible",
+      "notes": "Single foreground worker beside brick stacks; helmet and orange vest regions broadly align and are spatially attributable in this example.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S07",
+      "path": "images/val/source-241f49c7c7ae0145e383951c72962fb9.jpg",
+      "stratum_class": "hard_hat",
+      "source_class": 0,
+      "split": "val",
+      "filename_family": "source-",
+      "smallest_target_area": 0.0001558656,
+      "sha256": "c4ea2c525c7e9f95cba0dbb6bed81e323a389c655bd7315973e78c88fa9e8c34",
+      "review_status": "small_target_review",
+      "notes": "Multiple workers; focused helmet target is small. Other torso/head boxes differ in visibility. Enlarged pixels do not establish exhaustive labels.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S08",
+      "path": "images/val/ultralytics-ppe-nov2026-373.jpg",
+      "stratum_class": "hard_hat",
+      "source_class": 0,
+      "split": "val",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.0135315461,
+      "sha256": "8bd4e105802efc9dde55d40d8323cc347b1cb32a26ae7ff5643279e0121d06c4",
+      "review_status": "broadly_compatible",
+      "notes": "Foreground helmet/vest subject carrying coiled cable. PPE appears on the subject, but box annotations encode no explicit ownership or correct-fit relation.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S09",
+      "path": "images/train/source-1cf7cb3866d943a954bc8e591591e519.jpg",
+      "stratum_class": "safety_vest",
+      "source_class": 2,
+      "split": "train",
+      "filename_family": "source-",
+      "smallest_target_area": 0.0003512322,
+      "sha256": "aae9b689baed494beee5f39a239ece2c640f223ae3931e519c36e3e9d21f50bc",
+      "review_status": "small_target_review",
+      "notes": "Excavation scene with several small/overlapping subjects. Focused vest is visible; adjacent person/PPE boxes require relational review at small scale.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S10",
+      "path": "images/train/ultralytics-ppe-nov2026-283.jpg",
+      "stratum_class": "safety_vest",
+      "source_class": 2,
+      "split": "train",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.07587429600000001,
+      "sha256": "483da2f6d101196e4aed341858951f778d48c87879ae18fc2deec55c8e65d7a7",
+      "review_status": "broadly_compatible",
+      "notes": "Foreground helmet/orange vest subject beside reflective glazing. Reflections create a potential person-count/ownership policy issue; do not automatically label reflected subjects as extra workers.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S11",
+      "path": "images/val/source-8ab3d789269f96488e51d8550b563200.jpg",
+      "stratum_class": "safety_vest",
+      "source_class": 2,
+      "split": "val",
+      "filename_family": "source-",
+      "smallest_target_area": 0.0007241605,
+      "sha256": "19aa6e0dfb76991a0e85130533585683e3154ca4b1d6704b99910888ec5d6819",
+      "review_status": "small_target_review",
+      "notes": "Warehouse crowd and forklift occlusions. Focused rear subject has visible vest, but many head regions are small; assessability and completeness need review.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S12",
+      "path": "images/val/ultralytics-ppe-nov2026-100.jpg",
+      "stratum_class": "safety_vest",
+      "source_class": 2,
+      "split": "val",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.072777225,
+      "sha256": "15b1e10c6a9d7fd307edbf119b6e5325b4c58838229ae05ee2e2bc7eeb022a22",
+      "review_status": "broadly_compatible",
+      "notes": "Two nearby subjects with helmets and high-visibility vests; boxes broadly align. Overlapping person context still lacks encoded ownership links.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S13",
+      "path": "images/train/source-62f03e64233ccb5a3966914b379a424c.jpg",
+      "stratum_class": "visible_missing_hard_hat",
+      "source_class": 6,
+      "split": "train",
+      "filename_family": "source-",
+      "smallest_target_area": 5.7622500000000006e-05,
+      "sha256": "81e61cc0d6813b2d7a4222d0f544e8da6c2ce25aa77054b42f00c1719b6c292c",
+      "review_status": "limited_visibility",
+      "notes": "Backlit distant warehouse subject with a tiny blurred no-helmet region. Insufficient source detail to certify a negative PPE state; leave unresolved.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S14",
+      "path": "images/train/ultralytics-ppe-nov2026-402.jpg",
+      "stratum_class": "visible_missing_hard_hat",
+      "source_class": 6,
+      "split": "train",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.0150498773,
+      "sha256": "ec2e1b0ba970f111954bd1ab7f8984717713c4682c0b285bd1113c868f7b11a3",
+      "review_status": "broadly_compatible",
+      "notes": "Foreground head without a visible hard hat, goggles and high-visibility vest. Supplied no-helmet region broadly matches visible head; no claim about required PPE.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S15",
+      "path": "images/val/source-485eb05877af0e242d34e297d390c7cd.jpg",
+      "stratum_class": "visible_missing_hard_hat",
+      "source_class": 6,
+      "split": "val",
+      "filename_family": "source-",
+      "smallest_target_area": 9.6e-05,
+      "sha256": "24f563c3cd690520fb3fa3a036b874ccc465668f40f36fb7a0c7c2fd7f491dc4",
+      "review_status": "limited_visibility",
+      "notes": "Very small subject near concrete truck, partly occluded. Focused pixels do not support a reliable hard-hat absence decision; negative label needs adjudication.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S16",
+      "path": "images/val/ultralytics-ppe-nov2026-096.jpg",
+      "stratum_class": "visible_missing_hard_hat",
+      "source_class": 6,
+      "split": "val",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.0160326618,
+      "sha256": "78bad2cefdf4a5b54634ae5b2b603f334de7bd7c93376506bbf9174055e250a7",
+      "review_status": "broadly_compatible",
+      "notes": "Two nearby subjects including crouched posture; heads and high-visibility vests visible. No-helmet boxes broadly align; temporal/ownership relationships not annotated.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S17",
+      "path": "images/train/source-fc7635f8f5ccf2152ef0afcd824df643.jpg",
+      "stratum_class": "visible_missing_safety_vest",
+      "source_class": 11,
+      "split": "train",
+      "filename_family": "source-",
+      "smallest_target_area": 0.00023,
+      "sha256": "3ddaabda8424affa6faecfa38783f46fd1e16c1d78d7a926c6913f70062fec4d",
+      "review_status": "limited_visibility",
+      "notes": "Night scene; focused negative-vest subject is tiny and poorly lit. Dark appearance does not establish garment reflectivity; unable to clear the negative label.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S18",
+      "path": "images/train/ultralytics-ppe-nov2026-581.jpg",
+      "stratum_class": "visible_missing_safety_vest",
+      "source_class": 11,
+      "split": "train",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.0635312951,
+      "sha256": "e1b550b2bbcbd3e7137f210ac61336a5151d6f00df1803f2f7386d6658fe3910",
+      "review_status": "broadly_compatible",
+      "notes": "Bent foreground subject in ordinary shirt without visible high-visibility garment. No-helmet/no-vest regions broadly align, but their overlap does not encode ownership or compliance.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S19",
+      "path": "images/val/source-150feca69395fa769adccdc8e157e935.jpg",
+      "stratum_class": "visible_missing_safety_vest",
+      "source_class": 11,
+      "split": "val",
+      "filename_family": "source-",
+      "smallest_target_area": 0.00035099999999999997,
+      "sha256": "68f1a59fa437a103418d58a65d10273e862da3c33e318ab347d71cb23f303ad3",
+      "review_status": "limited_visibility",
+      "notes": "Distant rear-facing subject with heavily pixelated torso and helmet region. No-vest annotation remains uncertain at available resolution; not cleared by this review.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    },
+    {
+      "sample_id": "S20",
+      "path": "images/val/ultralytics-ppe-nov2026-349.jpg",
+      "stratum_class": "visible_missing_safety_vest",
+      "source_class": 11,
+      "split": "val",
+      "filename_family": "ultralytics-ppe-nov2026-",
+      "smallest_target_area": 0.0936053379,
+      "sha256": "9be2855ec4382086f509227c00d0cb31807d11363c4b5313e2f9b7d8078af3dd",
+      "review_status": "broadly_compatible",
+      "notes": "Helmeted foreground subject in ordinary gray shirt beside forklift. No-vest box broadly covers visible torso; equipment occludes part of body and no correct-fit judgment is possible.",
+      "reviewer": "Codex visual inspection; not independent human expert adjudication",
+      "views": "Annotated overview; source-family images also inspected in nearest-neighbor enlarged context crop"
+    }
+  ],
+  "scene_search": {
+    "images_searched": 1000,
+    "candidate_pairs": 21,
+    "cross_split_candidates": 3,
+    "stratified_images": 20,
+    "scene_queue_images": 30,
+    "additional_gate_neighbors": 12,
+    "method": "whole dHash<=12 OR border dHash<=32/256 plus color MAE<=25; aspect difference<=10%"
+  },
+  "scene_queue": [
+    {
+      "sample_id": "Q01",
+      "path": "images/train/source-3978abe9cfed5d8a5faa5a98dfe4b00a.jpg",
+      "sha256": "21febc3726dc503501d6bcdf701cf5c8ecced7c4f8b22e76623ce7501d182660",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q02",
+      "path": "images/train/source-40471b5afe759eb420a90db737aa9a93.jpg",
+      "sha256": "dea7972f72043ae89a9abbf515abbebfdbf79921c0d3e284c40af0c18c229e04",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q03",
+      "path": "images/train/source-9ec80cefaef867295b0c9b5b6c7757c8.jpg",
+      "sha256": "4b036fc00d9e8cab67966372f3408fdf372903bfa1fd306962e738aa66262b25",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q04",
+      "path": "images/train/source-a36439d05ebf0f383997aed40d295074.jpg",
+      "sha256": "3285c89290c64f8026aa1522e4d03ed1c1a5c0a24c2d3124f4ffa4483d38924e",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q05",
+      "path": "images/train/source-efc23273c04e007083114c0f217335f0.jpg",
+      "sha256": "188bbd722904407ee6af5e65c2b61ab8e56949c1fba4630a3a0a7bf8b4ef4be0",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q06",
+      "path": "images/train/ultralytics-ppe-nov2026-069.jpg",
+      "sha256": "47c356e722adbe6ed61c9fb0dd3f592eb89a6f0c1a906382f6c7768a7bc3dc37",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q07",
+      "path": "images/train/ultralytics-ppe-nov2026-110.jpg",
+      "sha256": "7fb46afd20b00f7fd26d10093e07abc52f03ee46e1d9602b846d20b09f09f780",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q08",
+      "path": "images/train/ultralytics-ppe-nov2026-135.jpg",
+      "sha256": "1cc5e6df52842690fda42dd2191e7ef819e1eec04fcc7eaebb89bbc2847b4e8b",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q09",
+      "path": "images/train/ultralytics-ppe-nov2026-155.jpg",
+      "sha256": "324477536e9e9ab137ea4b3cf9eb9e434e1a31ad0c2722775af9ce2db6e9e04a",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q10",
+      "path": "images/train/ultralytics-ppe-nov2026-163.jpg",
+      "sha256": "48ecfb277d9934fd95292ef3dda734e26367abbbf49fdb3d2b26d14fd4a96004",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q11",
+      "path": "images/train/ultralytics-ppe-nov2026-169.jpg",
+      "sha256": "8b33727cc2ef977a752ed8751e12b802ba06dcc01f95d186133d9aaafd8feaa6",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q12",
+      "path": "images/train/ultralytics-ppe-nov2026-210.jpg",
+      "sha256": "f3647b15cdbca43c4188a59be6e2f379a0bde0a88a86a0cfbf03037badc74eea",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q13",
+      "path": "images/train/ultralytics-ppe-nov2026-235.jpg",
+      "sha256": "2a10270a914d275160517d956874ea51e820c8ef2bd54bf06e6b66ea0aaa7170",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q14",
+      "path": "images/train/ultralytics-ppe-nov2026-310.jpg",
+      "sha256": "ec08eb9d608c28d50f5e24d083df2c39ede8a3c314c41586ca1955d2d6ef6367",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q15",
+      "path": "images/train/ultralytics-ppe-nov2026-331.jpg",
+      "sha256": "aac5d8e865e73af6b74668e58a0beaefa733b38b5ca4fc266f8ce01b72801723",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q16",
+      "path": "images/train/ultralytics-ppe-nov2026-335.jpg",
+      "sha256": "576c29d6795b079e239721807c005e1d0ed7d540239a6669da2ddd1cb1a211e2",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q17",
+      "path": "images/train/ultralytics-ppe-nov2026-363.jpg",
+      "sha256": "0db91585148906e5fe7c0c37d81dad29df53d8f4c75c229a295d103a9f49ba95",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q18",
+      "path": "images/train/ultralytics-ppe-nov2026-393.jpg",
+      "sha256": "677fa259dc0678a3510320d9f2b980eea29cde3c9bb865d9ea72963fc33b5a34",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q19",
+      "path": "images/train/ultralytics-ppe-nov2026-410.jpg",
+      "sha256": "dc69dc9329bb0e6cbf473afe313fb231313538bc573df2f2c56517eafa8236a4",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q20",
+      "path": "images/train/ultralytics-ppe-nov2026-455.jpg",
+      "sha256": "0f84df583cffca041a66f72e89977e7feb7a1e43be0969d5331002f745eb5c31",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q21",
+      "path": "images/train/ultralytics-ppe-nov2026-510.jpg",
+      "sha256": "546be5d4581c4e0387df1d3e8e545788e62cdfcb9d702e8c661d8659e550d825",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q22",
+      "path": "images/train/ultralytics-ppe-nov2026-569.jpg",
+      "sha256": "e61827cb12257920b022d7b78aedeb6f44e3fd8c3a0cd1270f20ce4faa563985",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q23",
+      "path": "images/train/ultralytics-ppe-nov2026-601.jpg",
+      "sha256": "d26c98dfeb2433f124175a8bfdba12e62686b3376be8076d11f81686686f50df",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q24",
+      "path": "images/train/ultralytics-ppe-nov2026-610.jpg",
+      "sha256": "2194883c9d720371677d661bd672c97619ebf2e5868a1cbc80a4645084509ee2",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q25",
+      "path": "images/train/ultralytics-ppe-nov2026-631.jpg",
+      "sha256": "c50dae2202ba590a1fc3b107cbf4280df60eddf0bb1fb7ae0d778946f446ab10",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q26",
+      "path": "images/train/ultralytics-ppe-nov2026-669.jpg",
+      "sha256": "15ca7fa35bd1e8331da45700be84af74beb604e2a938aab7a9f04bd4b08258a1",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q27",
+      "path": "images/val/source-00f1fbfd9c8193a3c5a071512cf8c0a7.jpg",
+      "sha256": "e3ace9301365e02e0ff2ef08be2c4e2a655d6fa00ee07f752c91684be218a3fb",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q28",
+      "path": "images/val/source-4c206d0f090805255c642a9a3d58d0e5.jpg",
+      "sha256": "8303154e548824aa122197809fd39acae45adcb6cfc12fb3e55682536b075c0b",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q29",
+      "path": "images/val/source-8497dd5065ce426e2d223085b4a773a0.jpg",
+      "sha256": "9075afad1312c48114550d8682eb1b7f24ec479df60fb02b1fab83a34eacb7de",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "Q30",
+      "path": "images/val/source-9e10b0409f922546c35b276eb5a5756e.jpg",
+      "sha256": "cc8c7ab84615d7ca861958339aced92d6488a6206a0bd8ec00dcc25dd46da935",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    }
+  ],
+  "seed_neighbors": [
+    {
+      "sample_id": "N01",
+      "path": "images/train/ultralytics-ppe-nov2026-484.jpg",
+      "retrieval_score": 0.68359375,
+      "sha256": "0734772c371e7499822fb134dd8042f34dd1fd7bca4911c4ce09d24252e3608d",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N02",
+      "path": "images/train/source-fd87396c628d9e0ce1ac0177cfbf27e3.jpg",
+      "retrieval_score": 0.6875,
+      "sha256": "10a10d67818b54b92565fd61b0e30ee3d5b4d26c5351185992413deb40d9d1a0",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N03",
+      "path": "images/train/ultralytics-ppe-nov2026-664.jpg",
+      "retrieval_score": 0.6875,
+      "sha256": "5d766b89d8fcb23ceaef1c35054c735ee15ef6f52cc1e251b023acced82c1358",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N04",
+      "path": "images/train/ultralytics-ppe-nov2026-395.jpg",
+      "retrieval_score": 0.6953125,
+      "sha256": "9adcc6dd12f697a5c76cc33f5963484d81ed623163b3e102fe2190447246c1ce",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N05",
+      "path": "images/train/source-d5d4d730d8fbb824c881beaa18b34d80.jpg",
+      "retrieval_score": 0.69921875,
+      "sha256": "3f77c1df7a9f43406109b5ac82d9ad3d9d87a2a5583783455b26167c30f38130",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N06",
+      "path": "images/train/source-022057494459ca6f76f42787146319ff.jpg",
+      "retrieval_score": 0.703125,
+      "sha256": "db588485e828fa67ba074caab0827c19fc0f23d987981e6ffd25975eb55cf8b8",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N07",
+      "path": "images/train/ultralytics-ppe-nov2026-430.jpg",
+      "retrieval_score": 0.703125,
+      "sha256": "1bc1f2599c3b1dbdd8f90e42fe50bc5cc1537f89b3f775680b5978a937837a23",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N08",
+      "path": "images/train/source-0c7d19330f0099fccf0318900a24806c.jpg",
+      "retrieval_score": 0.7109375,
+      "sha256": "f611ae8f631f9d6df090e10c8df9d9330b8c164e6dc1db1053082a868fa17d10",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N09",
+      "path": "images/train/source-705e8005b026f2e8fa4556bd135d1f13.jpg",
+      "retrieval_score": 0.7109375,
+      "sha256": "3defd08c9ce4e729ce305e4a1ae57758b2c0e4bb111994fd0976974dace28a9f",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N10",
+      "path": "images/train/ultralytics-ppe-nov2026-052.jpg",
+      "retrieval_score": 0.72265625,
+      "sha256": "a6151ee0b3b4715feea611919aa9c026bab55ec2f88a0190f95d79e708c23ca4",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N11",
+      "path": "images/val/ultralytics-ppe-nov2026-273.jpg",
+      "retrieval_score": 0.7265625,
+      "sha256": "4ae4f392b499c0ab41f94b7a1940f29af22cd1b18e498ff2e610fdf3d49f0e66",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    },
+    {
+      "sample_id": "N12",
+      "path": "images/train/ultralytics-ppe-nov2026-452.jpg",
+      "retrieval_score": 0.73046875,
+      "sha256": "5f43d86801108d0bda39e2929b006842eeea4d286d27f450bfaf9021c3ee82c2",
+      "reviewer": "Codex visual inspection; not a site-provenance determination",
+      "notes": "Opened annotated scene-search diagnostic; conclusions recorded in scene/pair decisions below. No worker identity inferred."
+    }
+  ],
+  "pair_decisions": [
+    {
+      "left": "images/train/source-3978abe9cfed5d8a5faa5a98dfe4b00a.jpg",
+      "right": "images/train/source-efc23273c04e007083114c0f217335f0.jpg",
+      "whole_distance": 2,
+      "border_distance": 12,
+      "color_mae": 1.5,
+      "cross_split": false,
+      "decision": "same_gate_scene_observed",
+      "rationale": "Matching entrance structure, red barrier, ground and background layout; group for leakage control, not worker identity."
+    },
+    {
+      "left": "images/train/source-3978abe9cfed5d8a5faa5a98dfe4b00a.jpg",
+      "right": "images/val/source-9e10b0409f922546c35b276eb5a5756e.jpg",
+      "whole_distance": 4,
+      "border_distance": 19,
+      "color_mae": 8.083,
+      "cross_split": true,
+      "decision": "same_gate_scene_observed",
+      "rationale": "Matching entrance structure, red barrier, ground and background layout; group for leakage control, not worker identity."
+    },
+    {
+      "left": "images/train/source-efc23273c04e007083114c0f217335f0.jpg",
+      "right": "images/val/source-9e10b0409f922546c35b276eb5a5756e.jpg",
+      "whole_distance": 6,
+      "border_distance": 21,
+      "color_mae": 8.583,
+      "cross_split": true,
+      "decision": "same_gate_scene_observed",
+      "rationale": "Matching entrance structure, red barrier, ground and background layout; group for leakage control, not worker identity."
+    },
+    {
+      "left": "images/train/source-40471b5afe759eb420a90db737aa9a93.jpg",
+      "right": "images/train/source-9ec80cefaef867295b0c9b5b6c7757c8.jpg",
+      "whole_distance": 10,
+      "border_distance": 40,
+      "color_mae": 11.25,
+      "cross_split": false,
+      "decision": "same_gate_scene_observed",
+      "rationale": "Matching entrance structure, red barrier, ground and background layout; group for leakage control, not worker identity."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-510.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-610.jpg",
+      "whole_distance": 10,
+      "border_distance": 57,
+      "color_mae": 10.083,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-393.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-510.jpg",
+      "whole_distance": 11,
+      "border_distance": 60,
+      "color_mae": 34.333,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-169.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-569.jpg",
+      "whole_distance": 9,
+      "border_distance": 66,
+      "color_mae": 3.25,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-110.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-310.jpg",
+      "whole_distance": 10,
+      "border_distance": 67,
+      "color_mae": 13.333,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-069.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-569.jpg",
+      "whole_distance": 12,
+      "border_distance": 75,
+      "color_mae": 3.917,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-393.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-610.jpg",
+      "whole_distance": 11,
+      "border_distance": 79,
+      "color_mae": 35.083,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-331.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-569.jpg",
+      "whole_distance": 8,
+      "border_distance": 80,
+      "color_mae": 20.833,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-163.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-363.jpg",
+      "whole_distance": 12,
+      "border_distance": 86,
+      "color_mae": 8.0,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/val/source-00f1fbfd9c8193a3c5a071512cf8c0a7.jpg",
+      "right": "images/val/source-8497dd5065ce426e2d223085b4a773a0.jpg",
+      "whole_distance": 12,
+      "border_distance": 88,
+      "color_mae": 24.083,
+      "cross_split": false,
+      "decision": "possible_source_site_relation_unresolved",
+      "rationale": "Doorway/site-entry context but viewpoint/background differs; shared site/source needs provenance or expert adjudication."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-155.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-455.jpg",
+      "whole_distance": 9,
+      "border_distance": 90,
+      "color_mae": 11.25,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-631.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-669.jpg",
+      "whole_distance": 10,
+      "border_distance": 91,
+      "color_mae": 27.333,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/source-a36439d05ebf0f383997aed40d295074.jpg",
+      "right": "images/val/source-4c206d0f090805255c642a9a3d58d0e5.jpg",
+      "whole_distance": 12,
+      "border_distance": 91,
+      "color_mae": 65.75,
+      "cross_split": true,
+      "decision": "different_backgrounds_observed",
+      "rationale": "Warehouse aisle versus exterior scaffold; no same-scene evidence from this candidate."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-235.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-335.jpg",
+      "whole_distance": 12,
+      "border_distance": 92,
+      "color_mae": 16.5,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-210.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-410.jpg",
+      "whole_distance": 11,
+      "border_distance": 97,
+      "color_mae": 15.833,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-169.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-331.jpg",
+      "whole_distance": 11,
+      "border_distance": 98,
+      "color_mae": 23.083,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-135.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-601.jpg",
+      "whole_distance": 11,
+      "border_distance": 103,
+      "color_mae": 21.833,
+      "cross_split": false,
+      "decision": "different_backgrounds_observed",
+      "rationale": "Forklift/pallet scene versus electrical switchgear scene; similar composition is not shared-scene proof."
+    },
+    {
+      "left": "images/train/ultralytics-ppe-nov2026-569.jpg",
+      "right": "images/train/ultralytics-ppe-nov2026-669.jpg",
+      "whole_distance": 12,
+      "border_distance": 105,
+      "color_mae": 16.083,
+      "cross_split": false,
+      "decision": "shared_source_not_established",
+      "rationale": "Visual review finds recurrent worksite motifs/poses with differing scenery; possible series or generated-template correlation remains unresolved. Do not auto-merge or declare independent."
+    }
+  ],
+  "confirmed_scene_groups": [
+    {
+      "group_id": "gate-entrance-01",
+      "members": [
+        "images/train/source-3978abe9cfed5d8a5faa5a98dfe4b00a.jpg",
+        "images/train/source-40471b5afe759eb420a90db737aa9a93.jpg",
+        "images/train/source-9ec80cefaef867295b0c9b5b6c7757c8.jpg",
+        "images/train/source-efc23273c04e007083114c0f217335f0.jpg",
+        "images/val/source-9e10b0409f922546c35b276eb5a5756e.jpg"
+      ],
+      "basis": "Same gate/entrance geometry, red barrier, ground and distant background seen in diagnostic images; two members newly linked beyond Phase 2.2A trio.",
+      "proposed_policy": "Keep whole group in one approved partition or quarantine the entire group pending scene inventory review.",
+      "applied_policy": "No split reassignment applied; all publisher memberships retained in staging."
+    }
+  ],
+  "limitations": [
+    "No full 1,000-image semantic review or independent second reviewer.",
+    "Hash search/42 scene-image inspections do not establish site-disjointness for remaining images.",
+    "No verified per-image real/generated or source-site metadata.",
+    "No relabeling or visibility/ownership ground truth has been created."
+  ]
+}

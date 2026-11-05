@@ -2,6 +2,8 @@
 
 Status: proposal for review. Phase 2.2A acquired and audited the original Construction-PPE dataset; it did **not** convert the full dataset, change the publisher split, create a test split, train a model, or implement mobile/inference/RAG features. See [actual audit evidence](DATASET_AUDIT.md), [selection](DATASET_SELECTION.md), [evaluation](EVALUATION.md), and [architecture](ARCHITECTURE.md).
 
+Phase 2.2B implementation and observed staging results are now documented in [DATA_PREPARATION.md](DATA_PREPARATION.md), with [visual review](ANNOTATION_REVIEW.md) and a [proposed split policy](SPLIT_POLICY.md). The text below remains the historical Phase 2.2A proposal; transformation is now authorized and implemented for a staging copy, while split-quality and training gates remain unresolved.
+
 ## Review gates before transformation
 
 1. Review the downloaded release's provenance, embedded CC BY 4.0 notice, checksums and class inventory. The archive URL uses a shared `v0.0.0` release and is not an immutable content address; require the recorded archive SHA-256 before reusing this audit. Keep dataset and software/weights licensing separate.
