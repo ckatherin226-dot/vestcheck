@@ -1,7 +1,11 @@
 # Model development boundary
 
-Planned tools: Python, PyTorch, Ultralytics YOLO, Google Colab, and OpenCV where needed. This directory contains Phase 1 documentation only. No dataset acquisition, preparation, training, weights, notebooks, or exports have been created.
+Planned tools for later model work: Python, PyTorch, Ultralytics YOLO, Google Colab, and OpenCV where needed. Phase 2.2A adds **acquisition and read-only quality auditing only**; no training, model weights, exports or inference have been implemented.
 
-After explicit Phase 2 approval, organize experiments, preprocessing, evaluation, and export behind clear boundaries. Pin versions only after compatibility checks. Track non-sensitive configuration and provenance; keep datasets, private images, checkpoints, and exported binaries outside Git.
+- [Audit tools and reproduction commands](AUDIT_TOOLS.md)
+- [Actual acquisition and audit findings](../docs/DATASET_AUDIT.md)
+- [Proposed next preparation steps](../docs/DATA_PREPARATION_PLAN.md)
+- [Dataset research](../docs/DATASETS.md) and [selection](../docs/DATASET_SELECTION.md)
+- [Evaluation strategy](../docs/EVALUATION.md) and [known limitations](LIMITATIONS.md)
 
-Start with [dataset candidates](../docs/DATASETS.md), [evaluation strategy](../docs/EVALUATION.md), and [known limitations](LIMITATIONS.md). Record model, software and dataset licensing separately.
+Original downloads and detailed reports stay in the ignored `model/data/` workspace. Do not commit raw images, label corpora, private data, archives or large artifacts. Do not convert the full dataset or alter train/validation membership until the audit is reviewed; model training requires explicit approval.

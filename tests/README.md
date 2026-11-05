@@ -1,11 +1,11 @@
-# Validation plan
+# Validation
 
-This tracked directory contains documentation only in Phase 1. No executable application tests exist and no application behavior has been validated.
+Phase 2.2A includes synthetic unit tests for the acquisition and auditing tools:
 
-Future checks should map to [MVP acceptance criteria](../docs/REQUIREMENTS.md) and the [evaluation plan](../docs/EVALUATION.md):
+```bash
+python -m unittest discover -s tests -p 'test_dataset_audit.py' -v
+```
 
-- Unit checks for session transitions, stale-result rejection, concern/uncertainty rules, association and duplicate handling, review state, and report selection.
-- Integration checks for camera permissions/rotation, export preprocessing/output parity, SQLite and private-file consistency, history recovery, and PDF export.
-- Real-device and labeled-video checks for latency, FPS, battery/thermals, missed concerns, duplicate rates, and interrupted/offline workflows.
+Install only the audit dependencies listed in `model/requirements-audit.txt` when needed; see [usage](../model/AUDIT_TOOLS.md). Tests create small synthetic images and labels in temporary directories and do not require downloading a dataset or importing training frameworks.
 
-Use licensed, synthetic, or expressly approved non-sensitive fixtures. Store private smartphone images, inspection records, and reports outside the repository. Choose test runners after the relevant stack and packages are pinned; do not install test dependencies during Phase 1.
+Application, model-accuracy, inference and device performance tests remain future work. Use the [MVP acceptance criteria](../docs/REQUIREMENTS.md) and [evaluation plan](../docs/EVALUATION.md) when those phases are authorized. Keep private smartphone photographs, inspection records and reports outside the repository.
